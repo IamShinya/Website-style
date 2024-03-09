@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+html {
+  font-size:100%;
+}
+
+body {
+  color:#000;
+  font-family:"游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  background-color:rgba(100,200,50,0.5);
+}
+
+ul {
+  list-style:none;
+}
+
+a {
+  text-decoration:none;
+}
+
+img {
+  max-width:100%;
+}
+
+.space {
+  height:45px;
+  background-color: #ffbb00;
+}
+
+.wrapper {
+  max-width:1160px;
+  margin:0 auto;
+}
+
+.conteinar {
+  background-image:url(images/main-bg.jpg);
+  background-size:cover;
+  height:100vh;
+}
+
+#header {  
+  display:flex;
+  justify-content:space-between;
+  height:60px;
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+}
+
+#header .header-logo {
+  opacity:0.7;
+  height:60px;
+  transition:1s;
+}
+
+#header .header-logo:hover {
+  opacity:1;
+  box-shadow:5px 5px 5px #000;
+}
+
+.main-nav {
+  display:flex;
+}
+
+.main-nav li a {
+  display:block;
+  padding:1.125rem 1.25rem;
+  height:60px;
+  border-right:1px solid #555;
+  transition:.4s;
+  color:#115500
+}
+
+.main-nav li a:hover {
+  background-color:rgba(55,55,55,.3);
+  font-size:20px;
+  padding:0.9375rem 1.25rem;
+  color:#000;
+  font-weight:bold;
+}
+
+.home-content {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-top:5rem;
+}
+
+.home-content h1{
+  font-size:12.5rem;
+  font-family:'HGP行書体';
+  letter-spacing:0.625px;
+  opacity:.8;
+  color:#444;
+}
+
+.home-content p {
+  font-size:3.75rem;
+  color:#444;
+  opacity:.7;
+}
+
+.grid {
+  display:grid;
+  gap:20px;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  margin-top:20px;
+  margin-bottom:30px;
+}
+
+#bg {
+  position: fixed;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  background-color:rgba(0,0,0,.4);
+}
+
+#photo {
+  position: absolute;
+  left: 0;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 640px;
+  height: 420px;
+}
+
+#main .main-text {
+  text-align:center;
+  background-color:rgba(10,130,250,0.5);
+  color:#333;
+  font-size:70px;
+  font-family:'HGP行書体';
+  padding:10px;
+}
+
+.item p {
+  text-align:center;
+}
+
+footer {
+background-color:#444444;
+height:50px;
+}
+
+.copyright {
+  text-align:center;
+  color:#fff;
+  padding:10px;
+}
